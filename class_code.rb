@@ -52,3 +52,14 @@ if name == ""
 else 
 	pp "One for #{name}, one for me."
 end
+
+#dice roll
+# write your program below
+roll1 = rand(6)
+roll2 = rand(6)
+
+if roll1 == roll2
+	pp "You guessed correctly."
+else
+	pp "Sorry, you guessed #{roll1}. The die landed on #{roll2}."
+end
