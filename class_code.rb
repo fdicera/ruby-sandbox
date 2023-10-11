@@ -170,4 +170,15 @@ numbers = string.gsub(/[^0-9]/, "").length
 pp "Number of digits in the string is: #{numbers}"
 
 	
+# Count the
+sentences = [
+  "the dog, the cat, the zebra, the giraffe",
+  "the, the code, and the developer",
+  "then the- their"
+]
+sentence = sentences.sample
+# write your program below
 
+counter = sentence.gsub(/[!@,%&"]/,'').gsub(/-/, "").gsub("the ", "1").gsub(/\ the$/, "1").gsub(/[^0-9]/, "").length
+
+pp "'the' appeared #{counter} times"
