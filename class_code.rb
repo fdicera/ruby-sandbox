@@ -149,3 +149,25 @@ elsif integer % 7 == 0
 else 
 	pp integer
 end
+
+#Character Types
+strings = [
+  "here 12 plus 25",
+  "puzzle number 04 ",
+  " "
+]
+string = strings.sample
+pp string
+# write your program below
+
+letters = string.gsub(/[^a-z]/i, "").length
+pp "Number of letters in the string is: #{letters}"
+
+spaces = string.gsub(/[^\s]/i, "").length
+pp "Number of spaces in the string is: #{spaces}"
+
+numbers = string.gsub(/[^0-9]/, "").length
+pp "Number of digits in the string is: #{numbers}"
+
+	
+
