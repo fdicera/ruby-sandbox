@@ -63,3 +63,24 @@ if roll1 == roll2
 else
 	pp "Sorry, you guessed #{roll1}. The die landed on #{roll2}."
 end
+
+# leap year
+years = [
+  1700,
+  1940,
+  2038
+]
+year = years.sample
+# write your program below
+
+if year % 4 == 0
+	if year % 100 == 0
+		if year % 400 == 0
+			pp "#{year} is a leap year!"
+		else
+			pp "#{year} is not a leap year."
+		end
+	else pp "#{year} is a leap year!"
+	end
+else pp "#{year} is not a leap year."
+end
