@@ -107,3 +107,22 @@ pp secret
 # write your program below
 
 pp secret.gsub("1", "a").gsub("2", "e").gsub("3", "i").gsub("4", "o").gsub("5", "u")
+
+# Sum Odd Integers
+inputs = [
+  ["9", "5", "4"],
+  ["20", "40", "60"],
+  ["1", "3", "19"]
+]
+numbers = inputs.sample
+pp numbers
+# write your program below
+
+sum = 0
+numbers.each do |n|
+	n = n.to_i
+	if n % 2 != 0
+		sum = sum + n
+	end	
+end
+pp sum
